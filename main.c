@@ -12,3 +12,15 @@ void display_board(char board[9])
     printf("\n");
 }
 
+int main(void)
+{
+    char board[9] = {
+        ' ', ' ', ' ',
+        ' ', ' ', ' ',
+        ' ', ' ', ' '
+    };
+
+    display_board(board);
+
+    return 0;
+}
