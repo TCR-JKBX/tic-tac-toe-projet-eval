@@ -21,6 +21,8 @@ La partie de code suivant dans le main.c :
         ' ', ' ', ' '
 (Utilisé en dernier recours, impossible de mettre les , et les ' dans le bon sens)
 
+Explication avec un peu de pseudo code pour expliquer comment implémenter la joueur 2 robot dans le morpion
+
 
 Le canard en plastique : 
 
