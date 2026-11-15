@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include "tic-tac-toe.h"
 
@@ -12,15 +13,6 @@ void display_board(char board[9])
     printf("\n");
 }
 
-int main(void)
-{
-    char board[9] = {
-        ' ', ' ', ' ',
-        ' ', ' ', ' ',
-        ' ', ' ', ' '
-    };
-
-    display_board(board);
 void player_turn(char board[9])
 {
     int position;
@@ -37,5 +29,18 @@ void player_turn(char board[9])
     board[position] = 'X';
 }
 
+int main(void)
+{
+    char board[9] = {
+        ' ', ' ', ' ',
+        ' ', ' ', ' ',
+        ' ', ' ', ' '
+    };
+
+    display_board(board);
+    player_turn(board);
+    display_board(board);
+
     return 0;
 }
+
