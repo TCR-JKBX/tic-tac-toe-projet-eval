@@ -21,6 +21,21 @@ int main(void)
     };
 
     display_board(board);
+void player_turn(char board[9])
+{
+    int position;
+
+    printf("Choisis une case (0 a 8) : ");
+    scanf("%d", &position);
+
+    while (position < 0 || position > 8 || board[position] != ' ')
+    {
+        printf("Case invalide ou deja occupee ! Reessaie : ");
+        scanf("%d", &position);
+    }
+
+    board[position] = 'X';
+}
 
     return 0;
 }
